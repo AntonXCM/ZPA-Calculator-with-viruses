@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="InterfacePages.CalculatorPage"
+      xmlns:fx="http://javafx.com/fxml/1">
+
+    <Label fx:id="digit" text="Цифры" style="-fx-font-size: 24px; -fx-alignment: center;"/>
+
+    <GridPane hgap="2" vgap="2">
+        <Button text="1" fx:id="button1" GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#HandleButton1"/>
+        <Button text="2" fx:id="button2" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#HandleButton2"/>
+        <Button text="3" fx:id="button3" GridPane.rowIndex="0" GridPane.columnIndex="2" onAction="#HandleButton3"/>
+        <Button text="+" fx:id="buttonAdd" GridPane.rowIndex="0" GridPane.columnIndex="3" onAction="#HandleAdd"/>
+
+        <Button text="4" fx:id="button4" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#HandleButton4"/>
+        <Button text="5" fx:id="button5" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#HandleButton5"/>
+        <Button text="6" fx:id="button6" GridPane.rowIndex="1" GridPane.columnIndex="2" onAction="#HandleButton6"/>
+        <Button text="-" fx:id="buttonSubtract" GridPane.rowIndex="1" GridPane.columnIndex="3" onAction="#HandleSubtract"/>
+
+        <Button text="7" fx:id="button7" GridPane.rowIndex="2" GridPane.columnIndex="0" onAction="#HandleButton7"/>
+        <Button text="8" fx:id="button8" GridPane.rowIndex="2" GridPane.columnIndex="1" onAction="#HandleButton8"/>
+        <Button text="9" fx:id="button9" GridPane.rowIndex="2" GridPane.columnIndex="2" onAction="#HandleButton9"/>
+        <Button text="*" fx:id="buttonMultiply" GridPane.rowIndex="2" GridPane.columnIndex="3" onAction="#HandleMultiply"/>
+
+        <Button text="0" fx:id="button0" GridPane.rowIndex="3" GridPane.columnIndex="0" onAction="#HandleButton0"/>
+        <Button text="=" fx:id="buttonEquals" GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#HandleEquals"/>
+        <Button text="\%" fx:id="buttonModulo" GridPane.rowIndex="3" GridPane.columnIndex="2" onAction="#HandleModulo"/>
+        <Button text="/" fx:id="buttonDivide" GridPane.rowIndex="3" GridPane.columnIndex="3" onAction="#HandleDivide"/>
+    </GridPane>
+</VBox>
